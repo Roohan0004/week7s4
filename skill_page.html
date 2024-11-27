@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills Page</title>
-    <link rel="stylesheet" href="./css/universal.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -13,6 +12,36 @@
             padding: 0;
             background-color: #f3f4f6;
             color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #1e40af;
+            color: #ffffff;
+            padding: 15px 20px;
+        }
+
+        .header-title {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .container {
@@ -61,10 +90,55 @@
             font-weight: bold;
             color: #1e293b;
         }
+
+        /* Footer styles */
+        footer {
+            background-color: #1e40af;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer-links {
+            margin: 10px 0;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            margin: 0 5px;
+            font-size: 1.5rem;
+        }
+
+        .social-icons a:hover {
+            color: #fbbf24;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- Header -->
+    <header>
+        <h1 class="header-title">Portfolio</h1>
+        <nav>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Skills Section -->
+    <div class="container" id="skills">
         <div class="header">
             <h1>My Skills</h1>
         </div>
@@ -126,5 +200,20 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+        <div class="footer-links">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
